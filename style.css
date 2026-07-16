@@ -22,17 +22,37 @@ ul {
 
 .icon{
 	display:inline-block;
-	height:56px;
-	width:56px;
+	padding-right:10px;
+	border:solid;
+	border-width:0px;
+	border-right-width:5px;
+	border-color:#96caff;
+}
+.icon:hover{
+	background-color:#96caff;
+}
+.icon a {
+	display:inline-block;
 	margin:2px;
 	margin-left:20px;
 	font-size:0px;
 	vertical-align:middle;
 	transition: background-color 0.3s ease;
+
 }
-.icon:hover{
-	background-color:#96caff;
+
+.icon p {
+   	display:inline-block;
+	font-weight:700;
+	font-size:26px;
+	margin:0px;
+	padding-left:10px;
+	padding-right:10px;
+	text-height:60px;
+	vertical-align:middle;
+	color:black;
 }
+
 
 .header{
 	z-index:100;
@@ -92,4 +112,19 @@ ul {
 	margin:0px; 
 	padding-right:32px;
 	padding-left:32px;
+}
+
+
+@media(max-width:840px){
+	.choice-menu-box{
+		display:none
+	}
+	
+	.icon{
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		border-right-width:0px;
+		width:100%;
+	}
 }
