@@ -4,6 +4,7 @@
 	--color1:rgb(128, 193, 255);
 	--color2:rgb(131, 182, 236);
 	--text-color:rgb(255,255,255);
+  --text-highlight-color:rgb(220,240,245);
 	--accent-color:rgb(45,45,255);
 }
 *{
@@ -43,10 +44,13 @@ body{
 	text-align:center;
 }
 
-.page ul li a{
+.page a{
 	padding:0px;
 	text-decoration:none;
 	color:var(--color2);
+}
+.page a:hover{
+  color:var(--accent-color);
 }
 
 /* TAB SELECTOR STYLE  */

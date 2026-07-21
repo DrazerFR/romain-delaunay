@@ -16,11 +16,12 @@ nav {
 	align-items:center;
 	text-decoration:none;
 	color:var(--text-color);
-	transition:background-color 0.15s ease-out;
+	transition:background-color 0.15s ease-out, color 0.15s ease-out;
 }
 
 .link-container a:hover{
-	background-color:var(--accent-color);
+  background-color:var(--accent-color);
+  color:var(--text-highlight-color);
 }
 
 .link-container{
